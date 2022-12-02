@@ -10,6 +10,7 @@
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@300&family=Nerko+One&display=swap');
       @import url('https://fonts.googleapis.com/css2?family=Doppio+One&family=Karla:wght@200&family=Roboto+Condensed&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Doppio+One&family=Karla:wght@200&family=Roboto+Condensed&family=Roboto:wght@300&display=swap');
 
       body {
         background: #111;
@@ -20,8 +21,8 @@
       }
       
       p {
-        font-family: 'Anek Devanagari', sans-serif;
-        font-size: 22px; 
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px; 
       }
      
       h3 {
@@ -50,10 +51,25 @@
         padding: 20px;
       }
 
+      .person {
+        display: flex;
+        align-items: center;
+      }
+
       .about p {
         border-bottom: 2px dashed white;
         border-top: 2px dashed white;
         padding: 20px;
+        display: inline-block;
+        width: calc(50% - 40px);
+      }
+
+      .about img {
+        padding: 0px;
+        margin: 20px;
+        display: inline-block;
+        width: calc(50% - 50px);
+
       }
 
       .about h4 {
@@ -66,6 +82,25 @@
         margin-left: 35%;
         margin-right: 35%;
         padding: 0px;
+      }
+
+      @media screen and (max-width: 500px) {
+        .person {
+            display: block;
+        }
+
+        .about p, .about img {
+            width: 100%;
+            padding-left: 0px;
+            padding-right: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+        .section {
+            width: calc(90% - 40px);
+            margin-left: 5%;
+        }
       }
     </style>
   </head>
@@ -95,15 +130,30 @@
         <div class="section about">
           <h3>Kim jesteśmy</h3>
           <h4>Paulina Fiedor</h4>
-          <p>Zawsze miała umysł analityczny. Wychodzi z założenia że podstawą projektu jest dokumentacja, właśnie dzięki niej zespół może być pewien że wszystko będzie odpowiednio zpisane i uporządkowane.  </p>
+          <div class="person">
+          <p>Zawsze miała umysł analityczny. Wychodzi z założenia że podstawą projektu jest dokumentacja, właśnie dzięki niej zespół może być pewien że wszystko będzie odpowiednio zpisane i uporządkowane. Doskonale posługuje się językiem angielskim, co pozwoli jej na tłumaczenie wszelkich potrzebnych dokumentów.</p>
+          <img src="img/paulina.png">
+          </div>
           <h4>Zofia Wrona</h4>
-          <p>Poprzez swoje kontakty oraz działania w fundacji Zakątek Fantastyki zapewnia zespołowi reklame. Prowadzi także instagrama naszego projektu. Jest osobą kreatywną oraz otwartą.</p>
-          <h4>Piotr von Bieniek</h4>
-          <p>Dzięki swojej władczej osobowości oraz umiejętności perswazji potrafi zmotywować zespół do większych wysiłków, potrafi również modelować oraz ma doświadczenie w druku 3D.</p>
+          <div class="person">
+          <p>Od zawsze była komunikatoywna i łatwo nawiązywała relacje. Posiada szerokie doświadczenie w zakresie people relations, zarządzania treściami w mediach społecznościowych, szególności instagramie, facebooku oraz tweeterze.</p>
+          <img src="img/zosia.png">
+          </div>
+          <h4>Piotr Bieniek</h4>
+          <div class="person">
+          <p>Dzięki swojej rozległej wiedzy z zakresu modelowania, projektowania, oraz obsługi rozmaitych obrabiarek przemysłowych w tym w szczególności druku 3D. Jest odpowiedzialny za budowę mechaniczną naszego CanSat-a, wykonanie wszyskich potrzebnych części, ich wymodelowanie a następnie wydrukowanie i złożenie w jedną sprawną całość.</p>
+          <img src="img/piotrek.png">
+          </div>
           <h4>Jakub 'Cixo' Gawęda</h4>
-          <p>Od wielu lat zajmujący się programowanie, posiadający doświadczenie w tworzeniu systemów operacyjnych oraz maszyn wirtualnych w C, C++ oraz Assemblerze.</p>
+          <div class="person">
+          <p>Od wielu lat zajmujący się programowaniem, posiadający doświadczenie w tworzeniu systemów operacyjnych oraz maszyn wirtualnych w C, C++ oraz Assemblerze. Od kilku lat zajmujący się również elektroniką oraz mechaniką. Ceni sobie tworzenie własnych autorkich rozwiązań i używanie ich nad ściąganie gotowców.</p>
+          <img src="img/cixo.png">
+          </div>
           <h4>Aleksander 'Olek47' Szkrobol</h4>
-          <p>Dzięki swojej bogatej wiedzy z zakresu security oraz tworzenia systemów safety-critical jest w stanei zaprojekotwać bardzo stabilny system potrzebny do wykonania misji</p>
+          <div class="person">
+          <p>Dzięki swojej bogatej wiedzy z zakresu security oraz tworzenia systemów safety-critical jest w stanie zaprojekotwać bardzo stabilny system potrzebny do wykonania misji, odpowiednio go przetestować jak również przewidzieć wszyskie ewentualności jakie mogą wydarzyć się podczas misji CanSat-a.</p>
+          <img src="img/olek.png">
+          </div>
         </div>
       </article>
 
